@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<main>
+  <div id="container" class="container">
+    <header class="header">
+      <div id="title" class="title">Ulrich Family Babysitting Gig Application Form</div>
+      <p id="description" class="description">
+      Please fill out the form below if your interested in babysitting for us.
+      </p>
+    </header>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:
+        <input
+          type="text"
+          id="name"
+          class="name"
+          placeholder="Type your name here"
+          required
+        />
+      </label>
+      <label for="number" id="number-label">
+        Age: (Must be at least 16)
+        <input
+         type= "number"
+         id="number"
+         class="number"
+         placeholder="##"
+         min="16"
+         max="75"
+         required
+        />
+      </label>
+      <label for="email" id="email-label">
+        E-mail: <input type="email" id="email" class="email" placeholder="Jane.Doe@gmail.com" required>
+      </label>
+      <label for="phone-number" id="phone-number-label">
+        Phone Number: <input type="tel" id="phone-number" class="phone-number" placeholder="(111)111-1111" pattern= "[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      </label>
+      <label for="dropdown" id="dropdown-label"> Do you have previous babysittin experience?
+        <select id="dropdown" name="yes-no" size="1">
+          <option value="yes" id="yes" name="yes-no">Yes </option>
+          <option value="no" id="no" name="yes-no"> No </option>
+          <option value="" id="" name="yes-no" hidden selected> </option>
+        </select>
+      </label>
+      <label for="work-hours" id="work-hours-label">
+        Desired hours per week:
+        <label for="3">
+          <input type="radio" id="3" name="work-hours" value="3">3
+        </label>
+        <label for="6">
+          <input type="radio" id="6" name="work-hours" value="6">6
+        </label>
+        <label for="9">
+          <input type="radio" id="9" name="work-hours" value="9">9
+        </label>
+        <label for="More than 9">
+          <input type="radio" id="More than 9" name="work-hours" value = "More than 9">More than 9
+        </label>
+      </label>
+      <label for="availability">
+        Days Available:
+        <label for="Sunday">
+          <input type="checkbox" id="Sunday" name="availability" value= "Sunday">Sunday
+        </label>
+        <label for="Monday">
+          <input type="checkbox" id="Monday" name="availability" value= "Monday">Monday
+        </label>
+        <label for="Tuesday">
+          <input type="checkbox" id="Tuesday" name="availability" value= "Tuesday">Tuesday
+        </label>
+        <label for="Wednesday">
+          <input type="checkbox" id="Wednesday" name="availability" value = "Wednesday">Wednesday
+        </label>
+        <label for="Thursday">
+          <input type="checkbox" id="Thursday" name="availability" value="Thursday">Thursday
+        </label>
+        <label for="Friday">
+          <input type="checkbox" id="Friday" name="availability" value="Friday">Friday
+        </label>
+        <label for="Saturday">
+          <input type="checkbox" id="Saturday" name="availability" value="Saturday">Saturday
+        </label>
+      </label>
+      <label for="comments/concerns">
+        Comments:
+        <textarea id="comments/concerns" placeholder="Type any other comments or concerns here."></textarea>
+      </label>
+      <button type="submit" id="submit"> Apply for Job </button>
+    </form>
+  </div>
+</main>
+</body>
+</html>
